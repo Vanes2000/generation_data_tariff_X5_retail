@@ -13,6 +13,6 @@ spring:
 
 logging:
   level:
-    com.test.nik: DEBUG
     org.springframework.jdbc: DEBUG
     org.springframework.transaction: DEBUG
+    org.example.connectionDataBase: DEBUG
