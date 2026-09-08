@@ -1,4 +1,4 @@
-package org.example.unsertData;
+package org.example.insertData;
 
 public class InsertExternalTariff {
 

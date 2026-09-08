@@ -1,7 +1,6 @@
 package org.example;
 
 import org.example.dataBase.CheckDataBaseConnection;
-import org.example.getData.GetDoljnost;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,10 +14,7 @@ public class DataGeneratorApplication {
 
         CheckDataBaseConnection connection =  context.getBean ( CheckDataBaseConnection.class );
 
-        GetDoljnost getDoljnost = context.getBean ( GetDoljnost.class );
-
-        getDoljnost.getDoljnost ( );
-
+        connection.validateConnection();
         connection.checkConnection ();
 
     }

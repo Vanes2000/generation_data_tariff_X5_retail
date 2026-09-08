@@ -1,4 +1,4 @@
-package org.example.unsertData;
+package org.example.insertData;
 
 import java.util.List;
 
