@@ -24,6 +24,4 @@ public class DatabaseService {
         return jdbcTemplate.update(sql, args);
     }
 
-    //метод для удаления (пусть будет)
-
 }
