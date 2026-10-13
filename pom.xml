@@ -15,37 +15,31 @@
     </parent>
 
     <properties>
-        <maven.compiler.source>23</maven.compiler.source>
-        <maven.compiler.target>23</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <logback.version>1.5.17</logback.version>
+        <java.version>23</java.version>
     </properties>
 
     <dependencies>
+
+        <!-- Spring Data JDBC: CrudRepository + JdbcTemplate под капотом -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <artifactId>spring-boot-starter-data-jdbc</artifactId>
         </dependency>
 
+        <!-- MySQL драйвер (актуальный groupId) -->
         <dependency>
-            <groupId>cn.danielw</groupId>
-            <artifactId>spring-jdbc-template</artifactId>
-            <version>0.2.1</version>
-            <scope>compile</scope>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
 
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.33</version>
-            <scope>compile</scope>
-        </dependency>
     </dependencies>
 
     <build>
