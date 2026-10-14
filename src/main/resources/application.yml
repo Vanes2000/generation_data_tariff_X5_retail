@@ -15,4 +15,3 @@ logging:
   level:
     org.springframework.jdbc: DEBUG
     org.springframework.transaction: DEBUG
-    org.example.connectionDataBase: DEBUG
