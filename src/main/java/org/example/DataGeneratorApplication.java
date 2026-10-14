@@ -20,8 +20,8 @@ public class DataGeneratorApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-//        tariffRepository.insertContractZone();
-        tariffRepository.insertExternalLevel();
-        log.info("Готово");
+        tariffRepository.insertContractZoneForAllDoljnosti();
+        tariffRepository.insertExternalLevelForAllDoljnosti();
+        tariffRepository.insertCoefficientsForAllDoljnosti();
     }
 }
